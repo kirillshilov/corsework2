@@ -1,4 +1,4 @@
-package sky;
+package sky.questionServis;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -8,6 +8,10 @@ public class Corsework2Application {
 
     public static void main(String[] args) {
         SpringApplication.run(Corsework2Application.class, args);
+
+
+
     }
+
 
 }
