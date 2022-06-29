@@ -2,7 +2,6 @@ package sky.exam;
 
 
 import org.springframework.stereotype.Service;
-import sky.questionServis.JavaQuestionService;
 import sky.questionServis.Question;
 import sky.questionServis.QuestionService;
 
