@@ -25,9 +25,7 @@ private final ExaminerService test = new ExaminerServiceImpl(serviceMock);
     void shouldReturnSetOfQuestions() {
         Set <Question> temp = new HashSet<>();
         temp.add(new Question("aaa", "bbb"));
-        temp.add(new Question("bbb", "ccc"));
-        temp.add(new Question("ccc", "ddd"));
-        when(serviceMock.getAll()).thenReturn(temp);
+        when(serviceMock.getRandomQuestion()).thenReturn(new Question("aaa", "bbb"));
         Assertions.assertEquals(temp, test.getQuestions(1));
     }
 }

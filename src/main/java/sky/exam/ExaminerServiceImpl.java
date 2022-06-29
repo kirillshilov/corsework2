@@ -20,7 +20,7 @@ public class ExaminerServiceImpl implements ExaminerService {
     @Override
     public Set<Question> getQuestions(int amount) {
         Set<Question> temp = new HashSet<>();
-        if (amount > service.getAll().size()) {
+        if (amount-1 > service.getAll().size()) {
             throw new BedParamException("very large number");
         }
        while (temp.size() < amount){
