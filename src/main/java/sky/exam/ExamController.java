@@ -16,7 +16,7 @@ public class ExamController {
     }
 
     @GetMapping("exam/java/begin")
-    Set<Question> getQuestions(@RequestParam int amount) {
+    Set <Question> getQuestions(@RequestParam int amount) {
         return service.getQuestions(amount);
     }
 }

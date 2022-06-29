@@ -10,7 +10,7 @@ import java.util.*;
 @Scope ("Singleton")
 public class JavaQuestionService implements QuestionService {
 
-    private static Set<Question> questions = new LinkedHashSet<>();
+    private static Set<Question> questions = new HashSet<>();
 
 
     @Override
@@ -34,7 +34,7 @@ public class JavaQuestionService implements QuestionService {
     }
 
     @Override
-    public Set<Question> getAll() {
+    public Set <Question> getAll() {
         return questions;
     }
 

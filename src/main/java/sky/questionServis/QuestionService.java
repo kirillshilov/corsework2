@@ -8,7 +8,7 @@ public interface QuestionService {
 
     String remove(String question, String answer);
 
-    Set<Question> getAll();
+    Set <Question> getAll();
 
     Question getRandomQuestion();
 }

@@ -14,8 +14,8 @@ import java.util.Set;
 public class ExaminerServiceImpl implements ExaminerService {
     QuestionService service;
 
-    public ExaminerServiceImpl() {
-        this.service = new JavaQuestionService();
+    public ExaminerServiceImpl(QuestionService javaQuestionService) {
+        this.service = javaQuestionService;
     }
 
     @Override
@@ -24,9 +24,9 @@ public class ExaminerServiceImpl implements ExaminerService {
         if (amount > service.getAll().size()) {
             throw new BedParamException("very large number");
         }
-        while (temp.size() < amount) {
-            temp.add(service.getRandomQuestion());
-        }
+       while (temp.size() < amount){
+           temp.add(service.getRandomQuestion());
+       }
         return temp;
     }
 }
